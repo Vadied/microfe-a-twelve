@@ -11,7 +11,18 @@ const routes: Routes = [
           import('./spa-host/spa-host.module').then((m) => m.SpaHostModule),
         data: { app: 'child12' },
       },
-    ]
+    ],
+  },
+  {
+    path: 'child7',
+    children: [
+      {
+        path: '**',
+        loadChildren: () =>
+          import('./spa-host/spa-host.module').then((m) => m.SpaHostModule),
+        data: { app: 'child7' },
+      },
+    ],
   },
 ];
 
