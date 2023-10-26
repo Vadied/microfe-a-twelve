@@ -6,9 +6,17 @@ Avere un container con una versione di angular e i microfrontend con angular div
 ## Premessa
 La documentazione ufficiale sconsiglia questa pratica (https://single-spa.js.org/docs/faq/#should-i-have-a-parentroot-app-and-children-apps) in favore di una shell in javascript vanilla.
 
+# Far partire il progetto
+
+1. Aprire un terminale per ogni microfrontend compreso il container
+2. Assicurarsi che node sia alal versione corretta per ogni microfrontend, consigliato l'uso di nvm
+3. Se si è appena clonato il progetto. lanciare "yarn install".
+4. Lanciare nel container "yarn start"
+5. Nei figli lanciare "yarn serve:single-spa:nome-figlio"
+
 # Passaggi per la creazione di un figlio in angular inferiore a 14
 1. Generare l’applicazione
-2. Ng add single-spa-angular
+2. Lanciare "ng add single-spa-angular"
 3. In app-routing-module.ts aggiungere le route con il path cui vedere il figlio e il path ** (tutto quanto non previsto) che porta al componente Empty Route
 4. In app-routing-module aggiungere { provide: APP_BASE_HREF, useValue: ‘/path’ } ai providers del modulo
 5. In angular.json prefix: nome figlio

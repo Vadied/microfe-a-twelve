@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { Page1Component } from './page1/page1.component';
+import { Page2Component } from './page2/page1.component';
 
 const routes: Routes = [{
   path: 'child7',
@@ -9,13 +11,13 @@ const routes: Routes = [{
     /**
      * All routes specific to this app go here.
      */
-    /*{
+    {
       path: 'page1',
       component: Page1Component
     }, {
       path: 'page2',
       component: Page2Component
-    }*/]
+    }]
 }, {
   path: '**',
   component: EmptyRouteComponent
@@ -24,6 +26,6 @@ const routes: Routes = [{
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/child7' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
 })
 export class AppRoutingModule { }
