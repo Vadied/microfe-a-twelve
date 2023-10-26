@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
 import { APP_BASE_HREF } from '@angular/common';
 
-const routes: Routes = [/*{
-  path: 'child2',
+const routes: Routes = [{
+  path: 'child7',
   children: [
     /**
      * All routes specific to this app go here.
@@ -15,8 +15,8 @@ const routes: Routes = [/*{
     }, {
       path: 'page2',
       component: Page2Component
-    }]
-}, */{
+    }*/]
+}, {
   path: '**',
   component: EmptyRouteComponent
 }];
