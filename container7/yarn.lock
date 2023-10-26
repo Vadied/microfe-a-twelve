@@ -410,6 +410,11 @@
   resolved "https://registry.yarnpkg.com/@types/source-list-map/-/source-list-map-0.1.4.tgz#a3d4e4791606f40a833ab1caf41f77463c8d72ff"
   integrity sha512-Kdfm7Sk5VX8dFW7Vbp18+fmAatBewzBILa1raHYxrGEFXT0jNl9x3LWfuW7bTbjEKFNey9Dfkj/UzT6z/NvRlg==
 
+"@types/systemjs@^6.13.4":
+  version "6.13.4"
+  resolved "https://registry.yarnpkg.com/@types/systemjs/-/systemjs-6.13.4.tgz#423a8ea76a600ba1f025f7e4d3ef786a78d27962"
+  integrity sha512-uLz8Hx16m5/RfnSXhGwchcjN/V3hI2PW3PCTuTWT0zlp8pS0ZJ5bF/3b4eGlQKUmR/2KfHSNK0CSH7UwqJ89CA==
+
 "@types/webpack-sources@^0.1.5":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-0.1.11.tgz#1f18b1c9271046f344d2e0f33ae4d34cd2ed29d9"
