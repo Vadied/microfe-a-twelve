@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
 
-const routes: Routes = [/*{
-  path: 'child2',
-  children: [
+const routes: Routes = [
+  {
+    path: 'child12',
+    children: [],
+    /*
     /**
      * All routes specific to this app go here.
      */
@@ -15,11 +17,13 @@ const routes: Routes = [/*{
     }, {
       path: 'page2',
       component: Page2Component
-    }]
-}, */{
-  path: '**',
-  component: EmptyRouteComponent
-}];
+    }]*/
+  },
+  {
+    path: '**',
+    component: EmptyRouteComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
