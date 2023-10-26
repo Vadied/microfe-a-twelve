@@ -8,8 +8,8 @@ La documentazione ufficiale sconsiglia questa pratica (https://single-spa.js.org
 
 ## Node versions
 https://angular.io/guide/versions
-Angular 12 - 16.14.2
-Angular 7 - 10.8.0
+- Angular 12 - 16.14.2
+- Angular 7 - 10.8.0
 
 # Far partire il progetto
 
