@@ -8,15 +8,15 @@ La documentazione ufficiale sconsiglia questa pratica (https://single-spa.js.org
 
 ## Node versions
 https://angular.io/guide/versions
-- Angular 12 - 16.14.2
-- Angular 7 - 10.8.0
+- Angular 12 -> 16.14.2
+- Angular 7 -> 10.8.0
 
 # Far partire il progetto
 
 1. Aprire un terminale per ogni microfrontend compreso il container
 2. Assicurarsi che node sia alla versione corretta per ogni microfrontend, consigliato l'uso di nvm
 3. Se si è appena clonato il progetto. lanciare "yarn install".
-4. Lanciare nel container "yarn start"
+4. Lanciare nel container `yarn start`
 5. Nei figli lanciare `yarn serve:single-spa:nome-figlio`
 
 # Creazione container in angular inferiore a 14
@@ -28,7 +28,8 @@ https://angular.io/guide/versions
 6. In assets aggiungere il file import-map.json con la mappatura dei figli
 7. In index.html aggiungere il tag import-map-overrides-full
 8. In index.html aggiungere il meta systemjs-importmap
-9. In index.html aggiungere <script type="systemjs-importmap" src="/assets/import-map.json"></script>
+9. In index.html aggiungere 
+`<script type="systemjs-importmap" src="/assets/import-map.json"></script>`
 10. 
 
 # Creazione di un figlio in angular inferiore a 14
